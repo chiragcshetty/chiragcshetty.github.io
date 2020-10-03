@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Chirag C. Shetty</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169146651-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169146651-1');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman";}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+div_img {
+  float: right;
+    margin: 0 0 15px 20px;
+    padding: 15px;
+    border: 0px solid black;
+    text-align: center;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Chirag C. Shetty</a>
+    <a href="resume.pdf" class="w3-bar-item w3-button w3-theme-l1">CV</a>
+    <a href="misc.html" class="w3-bar-item w3-button w3-theme-l1">Misc.</a>
+
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Interests</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="celegans.html">Bio-Inspired Computing</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="irnss.html">IRNSS</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Hello</h1>
+      <div>
+        <img src="me2.jpg" alt="Me" style="width:400px;height:300px;">
+    </div>
+    <font size="4">
+    <p>Hello, I'm Chirag. I graduated from IIT Bombay in 2017 with Bachelor's and Master's Degree in Electrical Engineering.</p>
+    
+    <p> At IITB I was fortunate to work with <a style="color:blue" href="https://sites.google.com/site/rajendranbipin/">Prof. Bipin Rajendran</a>, and be introduced to the intriguing world of bio-computing. We built <a style="color:blue" href="celegans.html">this</a> charming bot that is controlled by 10 microcontoller neurons. I believe extracting the working principles of biological computing, just like we extracted the working principles of flight a century ago will be a defining problem of this century (I picked the analogy from Prof. Rajendran)</p>
+
+    <p>I am equally amused how communication over these invisible waves work? Wireless communication seems magical. I was lucky to find a mentor in <a style="color:blue" href="https://www.ee.iitb.ac.in/~bsraj/">Prof. Sibiraj Pillai</a> who introduced me to wide variety of concepts in the field and in particular to Information Theory. When India completed the 7 satellite navigation system (IRNSS), we decided to build a receiver. To do so I did it as my Master's Thesis with Prof. Madhav Desai, and built <a style="color:blue" href="irnss.html">this</a>. </p>
+
+    <p>Then I was briefly at TSMC, Taiwan, and then at Texas Instruments as analog design engineer mentored by Vishy Pentakota. Here I won the <a style="color:red" href="TI_award.png"> Young Innovator Award 2019</a>.</p>
+
+    <p>During my time at IITB I was the Overall Coordinator of Student Technical Activities Body (STAB) and lead the Tinkerers' Lab of IIT Bombay.</p>
+
+
+  </div>
+
+ 
+
+
+
+<!--   <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p> Template by w3.css</p>
+    </div>
+  </footer> -->
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
